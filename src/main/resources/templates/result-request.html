@@ -6,13 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    名前を入力してください
-    <form th:action="@{/session-scope/input-name}" method="post">
-
-        <input type="text" name="name">
-        <button>送信</button>
-
-    </form>
+    「<span th:text="${session.name}">dummy</span>」さんこんにちは<br>
+    <a href="result-maypage.html"th:href="@{/session/to-mypage}">マイページ</a>
     
 </body>
 </html>
